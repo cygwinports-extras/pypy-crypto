@@ -1,0 +1,15 @@
+ORIG_PN="pycrypto"
+inherit pypy-distutils
+
+NAME="pypy-crypto"
+VERSION=2.6
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="PyPy cryptography toolkit"
+DESCRIPTION="This is a collection of both secure hash functions (MD5, SHA256,
+RIPEMD160, etc.) and various encryption algorithms (AES, DES, RSA, ElGamal,
+etc.)."
+
+# spaces in CFLAGS messes up distutils
+CFLAGS=-O2
+RESTRICT="debuginfo"
